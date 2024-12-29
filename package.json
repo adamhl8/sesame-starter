@@ -1,0 +1,19 @@
+{
+  "name": "sesame-starter",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "tsc --noEmit && biome check --write ."
+  },
+  "dependencies": {
+    "sesame-bun": "^0.1.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "^1.1.14",
+    "typescript": "^5.7.2"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
+}
