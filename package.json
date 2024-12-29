@@ -9,11 +9,7 @@
     "postinstall": [
       "git branch -M main"
     ],
-    "start": [
-      "echo 'To get started:'",
-      "echo 'cd sesame-starter'",
-      "echo 'View the README.md for usage instructions'"
-    ]
+    "start": "echo 'To get started:' && echo 'cd sesame-starter' && echo 'View the README.md for usage instructions'"
   },
   "dependencies": {
     "sesame-bun": "^0.1.3"
