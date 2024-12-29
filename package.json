@@ -5,6 +5,14 @@
   "scripts": {
     "lint": "tsc --noEmit && biome check --write ."
   },
+  "bun-create": {
+    "postinstall": [
+      "echo 'To get started:'",
+      "echo 'cd sesame-starter'",
+      "echo 'View the README.md for usage instructions'",
+      "git branch -M main"
+    ]
+  },
   "dependencies": {
     "sesame-bun": "^0.1.3"
   },
