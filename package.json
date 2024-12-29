@@ -7,10 +7,12 @@
   },
   "bun-create": {
     "postinstall": [
+      "git branch -M main"
+    ],
+    "start": [
       "echo 'To get started:'",
       "echo 'cd sesame-starter'",
-      "echo 'View the README.md for usage instructions'",
-      "git branch -M main"
+      "echo 'View the README.md for usage instructions'"
     ]
   },
   "dependencies": {
