@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "lint": "tsc --noEmit && biome check --write",
-    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\;"
+    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true"
   },
   "dependencies": {
     "sesame-bun": "^0.1.3"
@@ -17,6 +17,5 @@
   "bun-create": {
     "postinstall": ["git branch -M main"],
     "start": "View the README.md for usage instructions"
-  },
-  "trustedDependencies": ["@biomejs/biome"]
+  }
 }
